@@ -1,0 +1,32 @@
+main:
+    path: /
+    controller: App\Controller\MainController::loadMainPage
+    methods:    GET
+load_more_tickets:
+    path: /load_tickets/{id}
+    controller: App\Controller\MainController::loadItems
+    methods:    GET
+ticket_page:
+     path: /ticket/{id}
+     controller: App\Controller\MainController::loadDetailPage
+     methods: GET
+authorization:
+     path: /authorization
+     controller: App\Controller\MainController::authorization
+     methods: GET
+registration:
+    path: /registration
+    controller: App\Controller\MainController::registration
+    methods: GET
+file_form:
+    path: /file_form
+    controller: App\Controller\MainController::loadFormPage
+    methods: GET
+add_ticket:
+    path: /add_ticket
+    controller: App\Controller\MainController::addTicket
+    methods: GET
+end_session:
+    path: /end_session
+    controller: App\Controller\MainController::endSession
+    methods: GET

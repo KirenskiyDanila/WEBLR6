@@ -1,0 +1,51 @@
+.ticket{
+    display: flex;
+    flex-direction: column;
+}
+.ticket-title{
+    font-family: sans-serif;
+    font-size: 36px;
+    color: orange;
+    margin:auto;
+    border: 10px solid darkred;
+    border-radius: 15px;
+    padding: 12px;
+}
+.ticket-content{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+.ticket-photo{
+    width: 35%;
+}
+.ticket-photo img{
+    width: 100%;
+}
+.ticket-text{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ticket-description{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    border: gray;
+    color: orangered;
+}
+.ticket-bottom-text{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-price{
+    border: solid 6px coral;
+    padding: 10px;
+}
+.ticket-phone{
+    border: solid 6px aqua;
+    border-radius: 10px;
+    padding: 10px;
+    color: wheat;
+}
