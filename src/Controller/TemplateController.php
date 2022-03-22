@@ -32,7 +32,7 @@ class TemplateController
     {
         if (isset($_SESSION['name'])):?>
             <?php ob_start() ?>
-            <div class="header_logo"><img src="images/logo.png"></div>
+            <div class="header_logo"><img src="//localhost/WEBLR6/public/images/logo.png"></div>
             <div class="header_text"><a href="index.php">Сайт объявлений</a></div>
             <div class="header_sign-in">Привет, <?=$_SESSION['name']?></div>
             <div class="header_text"><a href="file_form">Добавить объявление</a></div>
@@ -41,8 +41,8 @@ class TemplateController
         <?php endif; ?>
         <?php if (!isset($_SESSION['name'])):?>
         <?php ob_start() ?>
-        <div class="header_logo"><img src="images/logo.png"></div>
-        <div class="header_text"><a href="index.php">Сайт объявлений</a></div>
+        <div class="header_logo"><img src="//localhost/WEBLR6/public/images/logo.png"></div>
+        <div class="header_text"><a href="//localhost/WEBLR6/public/">Сайт объявлений</a></div>
         <div class="header_sign-in"><a href="#login-window">Вход</a></div>
         <div class="header_sign-up"><a href="#registration-window">Регистрация</a></div>
         <?php $header = ob_get_clean() ?>
@@ -61,7 +61,7 @@ class TemplateController
             <div class="ticket-title"><?= $row['name'] ?></div>
             <div class="ticket-content">
                 <div class="ticket-photo">
-                    <img src="<?= $row['photo'] ?>">
+                    <img src=../<?= $row['photo'] ?>>
                 </div>
                 <div class="ticket-text">
                     <div class="ticket-description"><?= $row['description'] ?></div>

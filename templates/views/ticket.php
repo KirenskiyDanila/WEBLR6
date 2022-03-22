@@ -2,7 +2,8 @@
 
 <html lang="en">
 <head>
-    <link href="../templates/css/index.css" rel="stylesheet">
+    <link href="../../templates/css/ticket.css" rel="stylesheet">
+    <link href="../../templates/css/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<script src="../templates/js/scripts.js"></script>
+<script src="../../templates/js/scripts.js"></script>
 <body onload="loginCheck(), registerCheck();">
 <header id="header" >
     <?=$params['session']?>
